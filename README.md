@@ -141,7 +141,7 @@ is no non-4-colorable subgraph (induced or not) with at most 508 vertices. The m
 hitting-set/cut approach of Parts (arXiv:2010.12665, §5), organized as an implicit-hitting-set (SMUS) loop
 (A. Ignatiev, A. Previti, M. Liffiton, J. Marques-Silva, CP 2015); every cut is re-verified with a stored
 witness coloring, and the final infeasibility is certified by DRAT proofs produced by CaDiCaL and checked by
-two checkers written for this work. This is a **local** result: it says nothing about graphs that are not
+two checkers written for this work. For A3, the certificate also uses the fact that a minimum non-4-colorable subgraph has minimum degree at least 4. This is a **local** result: it says nothing about graphs that are not
 contained in these two point sets. It does **not** rely on the Lean kernel (its trusted base is Python code).
 Data, scripts and exact commands: `minimality/README.md`.
 

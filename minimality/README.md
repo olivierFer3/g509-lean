@@ -39,6 +39,9 @@ in kooshi/hadwiger-nelson (`data/m62`). What is added here is a checkable certif
      selection only) + the 392 cuts with one edge, whose 446 end vertices are therefore forced (unit
      clauses), the bound Σ ≤ 62 on the 98 other vertices, and the degree constraint
      x_v → (at least 4 neighbours of v in U) for the 3 vertices 310, 322, 437: 4278 variables, 8533 clauses.
+     The degree constraint is valid because a minimum non-4-colorable subgraph has minimum degree at least 4:
+     if a vertex v had at most 3 neighbours in it, a 4-coloring of the smaller subgraph without v (which exists
+     by minimality) would extend to v.
 4. *Certificate*: CaDiCaL 2.1.2 (`--no-binary`) proves both CNFs unsatisfiable and emits DRAT proofs, which
    are checked by **two checkers written for this work**: `drat_check.py` (RUP + RAT, forward; its streaming
    variant `drat_check_stream.py` imports the same `Checker` class) and `rup_check.py` (written separately by
