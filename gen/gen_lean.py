@@ -1,9 +1,10 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Writes G509/Data.lean and G509/EdgesK.lean from gen/g509.json (output of gen_g509.py).
 Usage: python3 gen/gen_lean.py . 12"""
 # License header written at the top of each generated Lean file.
-HEADER = '/-\nCopyright (c) 2026 olivierFer3. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
+HEADER = '/-\nCopyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
 import json, sys
 root = sys.argv[1]; nchunks = int(sys.argv[2])
 d = json.load(open(root + '/gen/g509.json'))

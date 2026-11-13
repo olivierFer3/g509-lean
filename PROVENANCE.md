@@ -12,7 +12,7 @@ unchanged).
 
 | item | category | how it is used |
 |---|---|---|
-| `HadwigerNelson/Defs.lean` (`unitDistance`, `planeColorable`) | COPIED | into `G509/Defs.lean`, definitions unchanged, inside the namespace `G509`; the copyright notice is kept. Not copied: the line `open Complex ComplexConjugate Topology Filter` and the lemma `neq_of_unit` (unused). |
+| `HadwigerNelson/Defs.lean` (`unitDistance`, `planeColorable`) | COPIED | into `G509/Defs.lean`, definitions unchanged, inside the namespace `G509`; the original copyright notice ("Copyright (c) 2024 Vasily Nesterov") is kept, and one header line records the modification. Not copied: the line `open Complex ComplexConjugate Topology Filter` and the lemma `neq_of_unit` (unused). |
 | statement of `plane_non_4_colorable` (`HadwigerNelson.lean`, proved there from Heule's 510-vertex graph) | statement reused | `G509.plane_non_4_colorable : ¬ planeColorable 4` has the same statement. |
 | `vtx/509_parts.vtx` | COPIED (data) | unchanged; the 509 points of J. Parts' graph. The README of vasnesterov/HadwigerNelson says it was sourced from the Polymath16 thread (https://dustingmixon.wordpress.com/2019/12/12/polymath16-fifteenth-thread-writing-the-paper-and-chasing-down-loose-ends/). Converted exactly by `gen/gen_g509.py`. |
 | overall structure | idea | as in the G510 proof: exact unit edges, reduction of the colorability of the plane to that of a finite graph, CNF, SAT certificate. |

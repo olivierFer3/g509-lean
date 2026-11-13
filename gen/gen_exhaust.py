@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Generates G509/ExhaustData.lean (encoded integer boxes, adjacency lists) and G509/X/R<k>.lean (chunks of
 rows) for the proof that the edge list of G509 is exhaustive.
 The boxes are recomputed here in Python with the SAME formulas as lo3/hi3 of G509/Distinct.lean; the kernel
@@ -7,7 +8,7 @@ checks `boxes = pts.map boxOf` anyway (G509/Exhaust.lean), so an error here woul
 compilation fail, but could not make the theorem wrong.
 Usage: python3 gen/gen_exhaust.py   (reads G509/Data.lean)"""
 # License header written at the top of each generated Lean file.
-HEADER = '/-\nCopyright (c) 2026 olivierFer3. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
+HEADER = '/-\nCopyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
 import re, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 src = open(R + "/G509/Data.lean").read()

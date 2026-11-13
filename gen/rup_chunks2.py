@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Splits a trimmed LRAT proof into Lean chunk modules for G509/RUP.lean; each chunk exports directly to each
 of its consuming chunks (lists x<j>_<k>), without transit through the intermediate chunks.
 Usage: rup_chunks2.py cnf lrat outdir Pkg hint_budget Fdef(or -) [ftpkg]  (env. STEPCAP: max steps per chunk)
@@ -10,7 +11,7 @@ Commands used for this repository (see PROVENANCE.md):
     (the second command is used only for its FT.lean, which becomes G509/S/FT.lean)
 """
 # License header written at the top of each generated Lean file.
-HEADER = '/-\nCopyright (c) 2026 olivierFer3. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
+HEADER = '/-\nCopyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
 import sys, os, bisect
 cnf, lrat, outdir, pkg, budget = sys.argv[1:6]; budget = int(budget)
 Fdef = sys.argv[6] if len(sys.argv) > 6 and sys.argv[6] != '-' else None

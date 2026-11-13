@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Backward trimming of an LRAT proof: keeps only the steps needed for the empty clause (like drat-trim -L).
 Output: textual LRAT without deletions.
 Usage: python3 gen/lrat_trim.py in.lrat out_trim.lrat"""

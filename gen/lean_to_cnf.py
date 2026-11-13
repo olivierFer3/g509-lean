@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Extracts the list `def F : List (List Nat) := [...]` from a Lean file (literals 2v / 2v+1) as DIMACS.
 Usage: python3 gen/lean_to_cnf.py G509/CNF.lean out.cnf"""
 import sys, re

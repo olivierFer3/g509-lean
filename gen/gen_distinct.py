@@ -1,10 +1,11 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Strict order of the 509 points by the real key K(p) = q·(96x) + (96y), with exact integer enclosures
 of M·√b (M = 10^9). Reproduces exactly the integer computations of the Lean module G509/Distinct.lean.
 Usage: python3 gen/gen_distinct.py . 1000 write"""
 # License header written at the top of each generated Lean file.
-HEADER = '/-\nCopyright (c) 2026 olivierFer3. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
+HEADER = '/-\nCopyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.\nAuthors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)\n-/\n'
 import json, sys
 from math import isqrt
 root = sys.argv[1]; q = int(sys.argv[2]); M = 10**9

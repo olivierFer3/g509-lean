@@ -1,6 +1,5 @@
 /-
-Copyright (c) 2026 olivierFer3. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
+Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
 Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 -/
 import Mathlib.Analysis.Complex.Basic

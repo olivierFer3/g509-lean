@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
-# Copyright (c) 2026 olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
+# Copyright (c) 2026 olivierFer3. Released under Apache 2.0 license as described in the file LICENSE.
+# Authors: olivierFer3 (code produced with Claude Code; see PROVENANCE.md)
 """Generates the exact data of G509 (Parts) for Lean, from vtx/509_parts.vtx
 (repository vasnesterov/HadwigerNelson, commit ad7843546da5f4db4fcf9827e0951f34295ad7cc).
 Usage: python3 gen/gen_g509.py vtx/509_parts.vtx gen/g509.json

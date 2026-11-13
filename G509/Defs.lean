@@ -2,6 +2,7 @@
 Copyright (c) 2024 Vasily Nesterov. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Vasily Nesterov
+Modified for g509-lean (2026): declarations placed in the namespace `G509` (see the module docstring).
 -/
 import Mathlib.Analysis.Complex.Basic
 
